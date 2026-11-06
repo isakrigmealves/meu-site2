@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio | Emily e Isabeli</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #fff7fa;
+            color: #493744;
+        }
+
+        header {
+            background: #e8b9d0;
+            padding: 22px;
+            text-align: center;
+        }
+
+        header h1 {
+            color: white;
+            font-size: 30px;
+        }
+
+        nav {
+            background: #f5dce8;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #754d65;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #bd7199;
+        }
+
+        .inicio {
+            text-align: center;
+            padding: 100px 20px;
+            background: linear-gradient(135deg, #fce5ef, #f8d4e4);
+        }
+
+        .inicio h2 {
+            font-size: 42px;
+            margin-bottom: 20px;
+            color: #a65e83;
+        }
+
+        .inicio p {
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        .botao {
+            display: inline-block;
+            background: #c77fa2;
+            color: white;
+            padding: 13px 28px;
+            border-radius: 25px;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .botao:hover {
+            background: #a65e83;
+        }
+
+        section {
+            padding: 65px 20px;
+            text-align: center;
+        }
+
+        section h2 {
+            color: #a65e83;
+            font-size: 30px;
+            margin-bottom: 25px;
+        }
+
+        .sobre {
+            max-width: 800px;
+            margin: auto;
+            line-height: 1.8;
+            font-size: 17px;
+        }
+
+        .alunas {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        .card {
+            background: white;
+            padding: 30px;
+            width: 280px;
+            border-radius: 18px;
+            box-shadow: 0 4px 15px #e8b9d055;
+        }
+
+        .card h3 {
+            color: #b56f94;
+            margin-bottom: 15px;
+            font-size: 22px;
+        }
+
+        .card p {
+            line-height: 1.6;
+        }
+
+        .projetos {
+            background: #fceaf2;
+        }
+
+        .projeto-card {
+            background: white;
+            max-width: 300px;
+            padding: 35px;
+            border-radius: 15px;
+            margin: 10px;
+        }
+
+        footer {
+            background: #e8b9d0;
+            text-align: center;
+            padding: 25px;
+            color: white;
+        }
+
+        @media (max-width: 600px) {
+            .inicio h2 {
+                font-size: 30px;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 7px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Nosso Portfólio</h1>
+    </header>
+
+    <nav>
+        <a href="#inicio">Início</a>
+        <a href="#sobre">Sobre nós</a>
+        <a href="#alunas">Alunas</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#contato">Contato</a>
+    </nav>
+
+    <div class="inicio" id="inicio">
+        <h2>Emily Schroeder & Isabeli Krigme</h2>
+        <p>Bem-vindos ao nosso portfólio!</p>
+        <p>Conheça um pouco sobre nós e nossos trabalhos.</p>
+        <a href="#sobre" class="botao">Conheça nosso trabalho</a>
+    </div>
+
+    <section id="sobre">
+        <h2>Sobre nós</h2>
+        <div class="sobre">
+            <p>
+                Somos Emily Schroeder e Isabeli Krigme.
+                Criamos este portfólio para apresentar um pouco
+                sobre quem somos, nossas ideias, criatividade
+                e projetos desenvolvidos durante nossa jornada
+                de aprendizagem.
+            </p>
+        </div>
+    </section>
+
+    <section id="alunas">
+        <h2>Quem somos?</h2>
+
+        <div class="alunas">
+
+            <div class="card">
+                <h3>Emily Schroeder</h3>
+                <p>
+                    Uma aluna dedicada, criativa e sempre
+                    disposta a aprender coisas novas e
+                    desenvolver novas habilidades.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Isabeli Krigme</h3>
+                <p>
+                    Uma aluna cheia de ideias, criatividade
+                    e vontade de aprender e compartilhar
+                    novos conhecimentos.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="projetos" id="projetos">
+        <h2>Nossos projetos</h2>
+
+        <div class="alunas">
+            <div class="projeto-card">
+                <h3>Projeto 01</h3>
+                <p>Espaço para adicionar nosso primeiro trabalho.</p>
+            </div>
+
+            <div class="projeto-card">
+                <h3>Projeto 02</h3>
+                <p>Espaço para adicionar nosso segundo trabalho.</p>
+            </div>
+
+            <div class="projeto-card">
+                <h3>Projeto 03</h3>
+                <p>Espaço para adicionar nosso terceiro trabalho.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato">
+        <h2>Obrigada pela visita!</h2>
+        <p>Este é o nosso espaço para compartilhar ideias e trabalhos.</p>
+    </section>
+
+    <footer>
+        <p>© 2026 - Portfólio Emily Schroeder e Isabeli Krigme</p>
+        <p>Feito com carinho ♡</p>
+    </footer>
+
+</body>
+
+</html>
