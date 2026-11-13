@@ -1,251 +1,401 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio | Emily e Isabeli</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            scroll-behavior: smooth;
-        }
+<title>Nosso Mundo no Agro 🌿</title>
 
-        body {
-            font-family: Arial, sans-serif;
-            background: #fff7fa;
-            color: #493744;
-        }
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
 
-        header {
-            background: #e8b9d0;
-            padding: 22px;
-            text-align: center;
-        }
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f8f7ef;
+    color: #52634d;
+}
 
-        header h1 {
-            color: white;
-            font-size: 30px;
-        }
+/* MENU */
+header {
+    background: #e5eddf;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
 
-        nav {
-            background: #f5dce8;
-            padding: 15px;
-            text-align: center;
-        }
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: #55734e;
+}
 
-        nav a {
-            text-decoration: none;
-            color: #754d65;
-            margin: 0 15px;
-            font-weight: bold;
-        }
+nav a {
+    text-decoration: none;
+    color: #52634d;
+    margin: 10px;
+    font-size: 15px;
+}
 
-        nav a:hover {
-            color: #bd7199;
-        }
+nav a:hover {
+    color: #b58c91;
+}
 
-        .inicio {
-            text-align: center;
-            padding: 100px 20px;
-            background: linear-gradient(135deg, #fce5ef, #f8d4e4);
-        }
+/* INÍCIO */
+.inicio {
+    text-align: center;
+    padding: 100px 20px;
+    background: linear-gradient(
+        rgba(239, 243, 228, 0.85),
+        rgba(248, 247, 239, 0.95)
+    );
+}
 
-        .inicio h2 {
-            font-size: 42px;
-            margin-bottom: 20px;
-            color: #a65e83;
-        }
+.inicio h1 {
+    font-size: 45px;
+    color: #58734f;
+    margin-bottom: 20px;
+}
 
-        .inicio p {
-            font-size: 18px;
-            margin-bottom: 30px;
-        }
+.inicio p {
+    font-size: 18px;
+    max-width: 650px;
+    margin: auto;
+    line-height: 1.8;
+}
 
-        .botao {
-            display: inline-block;
-            background: #c77fa2;
-            color: white;
-            padding: 13px 28px;
-            border-radius: 25px;
-            text-decoration: none;
-            transition: 0.3s;
-        }
+.botao {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 13px 30px;
+    background: #8da583;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: 0.3s;
+}
 
-        .botao:hover {
-            background: #a65e83;
-        }
+.botao:hover {
+    background: #b58c91;
+}
 
-        section {
-            padding: 65px 20px;
-            text-align: center;
-        }
+/* TÍTULOS */
+section {
+    padding: 65px 20px;
+}
 
-        section h2 {
-            color: #a65e83;
-            font-size: 30px;
-            margin-bottom: 25px;
-        }
+.titulo {
+    text-align: center;
+    font-size: 30px;
+    color: #65815b;
+    margin-bottom: 15px;
+}
 
-        .sobre {
-            max-width: 800px;
-            margin: auto;
-            line-height: 1.8;
-            font-size: 17px;
-        }
+.subtitulo {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #8c8c7a;
+}
 
-        .alunas {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 25px;
-            margin-top: 30px;
-        }
+/* ALUNAS */
+.alunas {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
 
-        .card {
-            background: white;
-            padding: 30px;
-            width: 280px;
-            border-radius: 18px;
-            box-shadow: 0 4px 15px #e8b9d055;
-        }
+.card {
+    background: white;
+    width: 280px;
+    padding: 30px 20px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 5px 18px #00000010;
+    transition: 0.3s;
+}
 
-        .card h3 {
-            color: #b56f94;
-            margin-bottom: 15px;
-            font-size: 22px;
-        }
+.card:hover {
+    transform: translateY(-8px);
+}
 
-        .card p {
-            line-height: 1.6;
-        }
+.foto {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    background: #e8eee1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 48px;
+    margin: 0 auto 20px;
+}
 
-        .projetos {
-            background: #fceaf2;
-        }
+.card h3 {
+    color: #68815f;
+    margin-bottom: 12px;
+}
 
-        .projeto-card {
-            background: white;
-            max-width: 300px;
-            padding: 35px;
-            border-radius: 15px;
-            margin: 10px;
-        }
+.card p {
+    line-height: 1.6;
+    font-size: 14px;
+}
 
-        footer {
-            background: #e8b9d0;
-            text-align: center;
-            padding: 25px;
-            color: white;
-        }
+/* SOBRE */
+.sobre {
+    background: #e9efe4;
+    text-align: center;
+}
 
-        @media (max-width: 600px) {
-            .inicio h2 {
-                font-size: 30px;
-            }
+.sobre p {
+    max-width: 800px;
+    margin: auto;
+    line-height: 1.9;
+    font-size: 17px;
+}
 
-            nav a {
-                display: inline-block;
-                margin: 7px;
-            }
-        }
-    </style>
+/* PROJETOS */
+.projetos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.projeto {
+    background: white;
+    width: 290px;
+    border-radius: 18px;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 5px 15px #00000010;
+}
+
+.projeto .icone {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.projeto h3 {
+    color: #68815f;
+    margin-bottom: 12px;
+}
+
+.projeto p {
+    line-height: 1.6;
+}
+
+/* FRASE FINAL */
+.frase {
+    text-align: center;
+    background: #dce7d6;
+    padding: 70px 20px;
+}
+
+.frase h2 {
+    color: #55734e;
+    font-size: 27px;
+    margin-bottom: 15px;
+}
+
+.frase p {
+    font-size: 17px;
+}
+
+/* RODAPÉ */
+footer {
+    background: #657c5e;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    font-size: 14px;
+}
+
+@media (max-width: 600px) {
+    header {
+        justify-content: center;
+        gap: 15px;
+    }
+
+    nav {
+        text-align: center;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 6px;
+    }
+
+    .inicio h1 {
+        font-size: 32px;
+    }
+
+    .titulo {
+        font-size: 25px;
+    }
+}
+</style>
 </head>
 
 <body>
 
-    <header>
-        <h1>Nosso Portfólio</h1>
-    </header>
+<header>
+    <div class="logo">🌿 Nosso Mundo no Agro</div>
 
     <nav>
         <a href="#inicio">Início</a>
-        <a href="#sobre">Sobre nós</a>
         <a href="#alunas">Alunas</a>
+        <a href="#sobre">Sobre o curso</a>
         <a href="#projetos">Projetos</a>
-        <a href="#contato">Contato</a>
     </nav>
+</header>
 
-    <div class="inicio" id="inicio">
-        <h2>Emily Schroeder & Isabeli Krigme</h2>
-        <p>Bem-vindos ao nosso portfólio!</p>
-        <p>Conheça um pouco sobre nós e nossos trabalhos.</p>
-        <a href="#sobre" class="botao">Conheça nosso trabalho</a>
-    </div>
+<!-- INÍCIO -->
+<section class="inicio" id="inicio">
 
-    <section id="sobre">
-        <h2>Sobre nós</h2>
-        <div class="sobre">
+    <h1>Nosso Mundo no Agro 🌻</h1>
+
+    <p>
+        Três alunas, um mesmo propósito e muitos sonhos
+        cultivados através da agricultura.
+        Seja bem-vindo ao nosso portfólio!
+    </p>
+
+    <a href="#alunas" class="botao">
+        Conheça nossa história
+    </a>
+
+</section>
+
+<!-- ALUNAS -->
+<section id="alunas">
+
+    <h2 class="titulo">🌷 Quem somos nós?</h2>
+
+    <p class="subtitulo">
+        Conheça um pouquinho sobre as futuras profissionais do agro.
+    </p>
+
+    <div class="alunas">
+
+        <div class="card">
+            <div class="foto">🌸</div>
+            <h3>Emily Schroeder</h3>
             <p>
-                Somos Emily Schroeder e Isabeli Krigme.
-                Criamos este portfólio para apresentar um pouco
-                sobre quem somos, nossas ideias, criatividade
-                e projetos desenvolvidos durante nossa jornada
-                de aprendizagem.
+                Estudante do curso de Agricultura,
+                apaixonada pelo aprendizado, pela natureza
+                e pelas oportunidades que o campo oferece.
             </p>
         </div>
-    </section>
 
-    <section id="alunas">
-        <h2>Quem somos?</h2>
-
-        <div class="alunas">
-
-            <div class="card">
-                <h3>Emily Schroeder</h3>
-                <p>
-                    Uma aluna dedicada, criativa e sempre
-                    disposta a aprender coisas novas e
-                    desenvolver novas habilidades.
-                </p>
-            </div>
-
-            <div class="card">
-                <h3>Isabeli Krigme</h3>
-                <p>
-                    Uma aluna cheia de ideias, criatividade
-                    e vontade de aprender e compartilhar
-                    novos conhecimentos.
-                </p>
-            </div>
-
+        <div class="card">
+            <div class="foto">🌼</div>
+            <h3>Fabiula Fernanda</h3>
+            <p>
+                Estudante de Agricultura, buscando novos
+                conhecimentos e experiências para crescer
+                pessoal e profissionalmente no agronegócio.
+            </p>
         </div>
-    </section>
 
-    <section class="projetos" id="projetos">
-        <h2>Nossos projetos</h2>
-
-        <div class="alunas">
-            <div class="projeto-card">
-                <h3>Projeto 01</h3>
-                <p>Espaço para adicionar nosso primeiro trabalho.</p>
-            </div>
-
-            <div class="projeto-card">
-                <h3>Projeto 02</h3>
-                <p>Espaço para adicionar nosso segundo trabalho.</p>
-            </div>
-
-            <div class="projeto-card">
-                <h3>Projeto 03</h3>
-                <p>Espaço para adicionar nosso terceiro trabalho.</p>
-            </div>
+        <div class="card">
+            <div class="foto">🌻</div>
+            <h3>Isabeli Krigme</h3>
+            <p>
+                Estudante de Agricultura, interessada
+                no desenvolvimento rural, na sustentabilidade
+                e no futuro da produção agrícola.
+            </p>
         </div>
-    </section>
 
-    <section id="contato">
-        <h2>Obrigada pela visita!</h2>
-        <p>Este é o nosso espaço para compartilhar ideias e trabalhos.</p>
-    </section>
+    </div>
+</section>
 
-    <footer>
-        <p>© 2026 - Portfólio Emily Schroeder e Isabeli Krigme</p>
-        <p>Feito com carinho ♡</p>
-    </footer>
+<!-- SOBRE O CURSO -->
+<section class="sobre" id="sobre">
+
+    <h2 class="titulo">🌱 Sobre nosso curso</h2>
+
+    <p>
+        O curso de Agricultura nos proporciona conhecimentos
+        sobre o solo, as plantas, as culturas agrícolas,
+        a produção de alimentos e a sustentabilidade.
+        Através das aulas teóricas e práticas, aprendemos
+        a importância do campo para a sociedade e como
+        contribuir para uma agricultura cada vez mais
+        responsável, produtiva e consciente.
+    </p>
+
+</section>
+
+<!-- PROJETOS -->
+<section id="projetos">
+
+    <h2 class="titulo">🍃 Nossos aprendizados</h2>
+
+    <p class="subtitulo">
+        Conhecimentos e experiências que fazem parte da nossa jornada.
+    </p>
+
+    <div class="projetos">
+
+        <div class="projeto">
+            <div class="icone">🌾</div>
+            <h3>Cultivo de plantas</h3>
+            <p>
+                Conhecimentos sobre plantio, desenvolvimento
+                das culturas e cuidados necessários para
+                uma boa produção.
+            </p>
+        </div>
+
+        <div class="projeto">
+            <div class="icone">🌱</div>
+            <h3>Cuidados com o solo</h3>
+            <p>
+                Aprendizados sobre a importância do solo,
+                sua conservação e o manejo adequado
+                para a agricultura.
+            </p>
+        </div>
+
+        <div class="projeto">
+            <div class="icone">🌍</div>
+            <h3>Sustentabilidade</h3>
+            <p>
+                A importância de produzir com responsabilidade,
+                preservando os recursos naturais
+                para as próximas gerações.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- FRASE FINAL -->
+<section class="frase">
+
+    <h2>🌻 Plantando conhecimento, colhendo o futuro!</h2>
+
+    <p>
+        Acreditamos que cada aprendizado é uma semente
+        para um futuro cheio de possibilidades.
+    </p>
+
+</section>
+
+<footer>
+    <p>🌿 Portfólio de Agricultura | Emily, Fabiula e Isabeli</p>
+    <p>Feito com carinho por três futuras profissionais do agro 💚</p>
+</footer>
 
 </body>
-
 </html>
